@@ -53,7 +53,7 @@ const Formulario = () =>{
 
 
     return (
-        <>
+        <div className="App">
             <h1>Formulario de Registro</h1>
             <Form onSubmit={handleSubmit(onSubmit)}>
                 <Form.Field>
@@ -97,8 +97,8 @@ const Formulario = () =>{
                         {...register('email', 
                         {
                             required: true,
-                           /* pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-                        */})
+                           pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                        })
                         }
                     />
                 </Form.Field>
@@ -132,7 +132,7 @@ const Formulario = () =>{
                     */}
                 </div>
             </Form>
-        </>
+        </div>
     )}
 
 
